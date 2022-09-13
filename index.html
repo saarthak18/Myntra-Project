@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/listing.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+    <script src="js/ilisting.js"></script>
+    <style>
+      .darkmode
+{
+  
+  background-color: #282c2f ;
+  color:cornsilk;
+}
+
+.navdark
+{background-color: #585858 ;
+  color:cornsilk;
+
+}
+    </style>
+ 
+
+
+</head>
+<body style="overflow-x:hidden ;">
+
+     <div id="coupon" >
+      
+      <button style="float: right;background: none;border: none;z-index: 11;" onclick="closecoupon()">
+        <i class="fa-solid fa-xmark" style="background:none;z-index: 11;position: absolute;margin-top: 5px;margin-left: -12px;"></i>
+      </button>
+      <!-- <img class="couponimg" src="img/coupon2.jpg"> -->
+      
+    </div> 
+  <nav id="nav1" class="navbar navbar-expand-sm bg-dark navbar-light" style="margin-top: -70px;" > 
+        <div class="container-fluid" id="nav" >
+          <a id="myntra" class="navbar-brand" href="#">
+            <img class="logo" src="img/download.jpg">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav" style="margin-left: -15px;margin-top: 25px;background-color: #ffff;">
+              <li class="nav-item" id="listitem">
+                <a class="nav-link" style="color: #282c3f;" href="#">MEN</a>
+              </li>
+              <li class="nav-item" id="listitem">
+                <a class="nav-link" style="color: #282c3f;" href="#">WOMEN</a>
+              </li>
+              <li class="nav-item" id="listitem">
+                <a class="nav-link" style="color: #282c3f;"href="#">KIDS</a>
+              </li>
+              
+              <li class="nav-item" id="listitem">
+                <a class="nav-link"style="color: #282c3f;" href="#">HOME & LIVING</a>
+              </li>
+              <li class="nav-item" id="listitem" style="margin-top:-20px;">
+                <div class="desktop-query" data-reactid="903"><input placeholder="Search for products, brands and more"
+                    class="desktop-searchBar" value="" data-reactid="904">
+                    <a class="desktop-submit" data-reactid="905">
+                      <i id="search" class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                </div>
+              </li>
+              <li id="mnv">
+                
+                <div class="interactions" style="margin-left :30px;">
+                  <i id="ielement" class="fa fa-user"></i>
+                  <p class="idesc">Profile</p>
+                  
+                </div>
+                <div class="interactions" style="margin-left :20px; ">
+                  <i id="ielement" class="fa fa-heart"></i>
+                  <p class="idesc">wishlist</p>
+                </div>
+                
+                <div class="interactions" style="margin-left :20px; ">
+                  <i  id="ielement" class="fa fa-shopping-bag"></i>
+                  <p class="idesc" style="margin-left: 28px;">Bag</p>
+                </div>
+
+                <div class="interactions" style="margin-left :20px; ">
+                  <button class="mode" id="modebutton" onclick="changemode()">
+                  <i class="fa-regular fa-circle-dot"></i>
+                  </button>
+                  <p class="idesc" style="margin-left: 28px;">Change Mode</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+<div class="row" id="car">
+              
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+          
+        </div>
+
+       
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/car1.jpg" alt="Los Angeles" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/car2.jpg" alt="Chicago" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/car3.jpg" alt="New York" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/car4.jpg" alt="New York" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/car5.jpg" alt="New York" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/car6.jpg" alt="New York" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/car7.jpg" alt="New York" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/car8.jpg" alt="New York" class="d-block w-100">
+          </div>
+          
+        </div>
+
+        
+        
+      </div>
+  </div>
+ </div> 
+<div id="head" class="head1"  style="margin-top: 90px;">
+  <h4   class="fonters"  class="fonters2" >DEAL OF THE DAY</h4>
+</div>
+ 
+<div class="row" id="dodcontainer" >
+  <div class="dod" >
+    <div class="fit" style="margin-left:-2px">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dodimg" src="img/dd1.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dodimg" src="img/dd2.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dodimg" src="img/dd3.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dodimg" src="img/dd4.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dodimg" src="img/dd5.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dodimg" src="img/dd6.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dodimg" src="img/dd7.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dodimg" src="img/dd8.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dodimg" src="img/dd9.jpg" style="margin-right: 0px;">
+      </a> 
+    </div>
+
+  </div>
+</div>
+
+<div id="head" class="head1" style="margin-top: 90px;">
+  <h4   class="fonters"  class="fonters2">BEST OF MYNTRA EXCLUSIVE BRANDS</h4>
+</div>
+
+<div class="row" id="dodcontainer" >
+  <div class="dod" >
+    <div class="fit" style="margin-left:-2px">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="bomimg" src="img/bom1.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="bomimg" src="img/bom2.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="bomimg" src="img/bom3.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="bomimg" src="img/bom4.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="bomimg" src="img/bom5.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="bomimg" src="img/bom6.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="bomimg" src="img/bom7.jpg">
+      </a> 
+    </div>
+
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="bomimg" src="img/bom8.jpg">
+      </a> 
+    </div>
+    </div>
+    <div class="dod" style="margin-top: 0px;margin-left: -2px;" >
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="bomimg" src="img/bom9.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="bomimg" src="img/bom10.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="bomimg" src="img/bom11.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="bomimg" src="img/bom12.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="bomimg" src="img/bom13.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="bomimg" src="img/bom14.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="bomimg" src="img/bom15.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="bomimg" src="img/bom16.jpg">
+      </a> 
+    </div>
+   
+
+  </div>
+</div>
+
+<div id="head" class="head1" style="margin-top: 40px;">
+  <h4  class="fonters"  class="fonters2">TOP PICKS</h4>
+</div>
+
+
+<div class="row" id="dodcontainer" >
+  <div class="dod" >
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="tpimg" src="img/tp.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="tpimg" src="img/tp2.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="tpimg" src="img/tp3.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="tpimg" src="img/tp4.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="tpimg" src="img/tp5.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="tpimg" src="img/tp6.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="tpimg" src="img/tp7.jpg">
+      </a> 
+    </div>
+   
+   
+
+  </div>
+</div>
+
+
+<div id="head" class="head1"  style="margin-top: 50px;">
+  <h4  class="fonters"  class="fonters2">CATEGORIES TO BAG</h4>
+</div>
+
+<div class="row" id="dodcontainer">
+  <div class="dod" >
+    <div class="fit" style="margin-left:-2px">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="cbimg" src="img/cb1.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="cbimg" src="img/cb2.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="cbimg" src="img/cb3.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="cbimg" src="img/cb4.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="cbimg" src="img/cb5.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="cbimg" src="img/cb6.jpg">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="cbimg" src="img/cb7.jpg">
+      </a> 
+    </div>
+
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="cbimg" src="img/cb8.jpg">
+      </a> 
+    </div>
+    </div>
+    <div class="dod" style="margin-top: 0px;margin-left: -2px;" >
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="cbimg" src="img/cb9.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="cbimg" src="img/cb10.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="cbimg" src="img/cb11.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="cbimg" src="img/cb12.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="cbimg" src="img/cb13.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="cbimg" src="img/cb14.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="cbimg" src="img/cb15.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="cbimg" src="img/cb16.webp">
+      </a> 
+    </div> 
+    </div>
+    <div class="dod" style="margin-top: 0px;margin-left: -2px;"  >
+      <div class="fit" style="margin-left:-2px">
+        <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+          <img class="cbimg" src="img/cb17.webp">
+        </a> 
+      </div>
+      <div class="fit">
+        <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+          <img class="cbimg" src="img/cb18.webp">
+        </a> 
+      </div>
+      <div class="fit">
+        <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+          <img class="cbimg" src="img/cb19.webp">
+        </a> 
+      </div>
+      <div class="fit">
+        <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+          <img class="cbimg" src="img/cb20.webp">
+        </a> 
+      </div>
+      <div class="fit">
+        <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+          <img class="cbimg" src="img/cb21.webp">
+        </a> 
+      </div>
+      <div class="fit">
+        <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+          <img class="cbimg" src="img/cb22.webp">
+        </a> 
+      </div>
+      <div class="fit">
+        <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+          <img class="cbimg" src="img/cb23.webp">
+        </a> 
+      </div>
+  
+      <div class="fit">
+        <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+          <img class="cbimg" src="img/cb24.webp">
+        </a> 
+      </div>
+      </div>
+
+</div>
+
+<div id="head" class="head1"  style="margin-top: 50px;">
+  <h4  class="fonters" class="fonters2">DEALS ON TOP BRANDS</h4>
+</div>
+
+
+<div class="row" id="dodcontainer">
+  <div class="dod" >
+    <div class="fit" style="margin-left:-2px">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="cbimg" src="img/dtp1.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/dtp2.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/dtp3.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/dtp4.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/dtp5.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/dtp6.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/dtp7.webp">
+      </a> 
+    </div>
+
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/dtp8.webp">
+      </a> 
+    </div>
+    </div>
+    <div class="dod" style="margin-top: 0px;margin-left: -2px;" >
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/dtp9.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/dtp10.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/dtp11.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/dtp12.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/dtp13.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/dtp14.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/dtp15.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/dtp16.webp">
+      </a> 
+    </div> 
+    </div>
+    <div class="dod" style="margin-top: 0px;margin-left: -2px;"  >
+      <div class="fit" style="margin-left:-2px">
+        <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+          <img class="dtpimg" src="img/dtp17.webp">
+        </a> 
+      </div>
+      <div class="fit">
+        <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+          <img class="dtpimg" src="img/dtp18.webp">
+        </a> 
+      </div>
+      <div class="fit">
+        <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+          <img class="dtpimg" src="img/dtp19.webp">
+        </a> 
+      </div>
+      <div class="fit">
+        <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+          <img class="dtpimg" src="img/dtp20.webp">
+        </a> 
+      </div>
+      <div class="fit">
+        <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+          <img class="dtpimg" src="img/dtp21.webp">
+        </a> 
+      </div>
+      <div class="fit">
+        <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+          <img class="dtpimg" src="img/dtp22.webp">
+        </a> 
+      </div>
+      <div class="fit">
+        <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+          <img class="dtpimg" src="img/dtp23.webp">
+        </a> 
+      </div>
+  
+      <div class="fit">
+        <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+          <img class="dtpimg" src="img/dtp24.webp">
+        </a> 
+      </div>
+      </div>
+
+</div>
+
+
+<div id="head" class="head1"  style="margin-top: 40px;">
+  <h4  class="fonters"  class="fonters2">MYNTRA LUXE</h4>
+</div>
+
+
+<div class="row" id="dodcontainer" >
+  <div class="dod" >
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/bb1.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/bb2.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/bb3.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/bb4.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/bb5.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/bb6.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/bb7.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/bb8.webp">
+      </a> 
+    </div>
+   
+   
+
+  </div>
+  <div class="dod"  style="margin-top: 0px;margin-left: 0px;">
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/bb9.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/bb10.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/bb11.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/bb12.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/bb13.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/bb14.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/bb15.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/bb16.webp">
+      </a> 
+    </div>
+   
+   
+
+  </div>
+</div>
+
+<div id="head" class="head1"  style="margin-top: 40px;">
+  <h4  class="fonters"  class="fonters2">BEST BUYS</h4>
+</div>
+
+<div class="row" id="dodcontainer" >
+  <div class="dod" >
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/ml1.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/ml2.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/ml3.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/ml4.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/ml5.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/ml6.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/ml7.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/ml8.webp">
+      </a> 
+    </div>
+   
+   
+
+  </div>
+  <div class="dod"  style="margin-top: 0px;margin-left: 0px;">
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/ml9.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/ml10.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/ml11.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/ml12.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/ml13.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/ml14.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/ml15.webp">
+      </a> 
+    </div>
+    <div class="fit">
+      <a href="https://www.myntra.com/casual?f=Brand%3ADenizen%20From%20Levis%2CLee%2CLevis%2CSPYKAR%2CWROGN%2CWrangler%2Cabof%3A%3ACategories%3AJackets%2CJeans%2CShirts%2CShorts%2CSweatshirts%2CTrack%20Pants%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A20.0_60.0_20.0%20TO%2060.0&sort=Customer%20Rating">
+        <img class="dtpimg" src="img/ml16.webp">
+      </a> 
+    </div>
+   
+   
+
+  </div>
+</div>  
+
+
+<div class="row" style=" background-color:#FAFBFC;">
+<div class="container" id="foot">
+  <div class="foots">
+    <div class="link" style="margin-left: 160px;" data-reactid="6">
+    <p class="subhead" data-reactid="31" ><a style="text-decoration: none; color: #282c3f" href="/?src=onlineShopping" data-reactid="31"> ONLINE SHOPPING </a>
+    </p><a style="text-decoration: none; color: #282c3f" href="/shop/men" data-reactid="9">
+      <!-- react-text: 10 -->
+      <!-- /react-text -->
+      <!-- react-text: 11 -->Men
+      <!-- /react-text -->
+      <!-- react-text: 12 -->
+      <!-- /react-text -->
+    </a><a href="/shop/women" data-reactid="13">
+      <!-- react-text: 14 -->
+      <!-- /react-text -->
+      <!-- react-text: 15 -->Women
+      <!-- /react-text -->
+      <!-- react-text: 16 -->
+      <!-- /react-text -->
+    </a><a href="/shop/kids" data-reactid="17">
+      <!-- react-text: 18 -->
+      <!-- /react-text -->
+      <!-- react-text: 19 -->Kids
+      <!-- /react-text -->
+      <!-- react-text: 20 -->
+      <!-- /react-text -->
+    </a><a href="/shop/home-living" data-reactid="21">
+      <!-- react-text: 22 -->
+      <!-- /react-text -->
+      <!-- react-text: 23 -->Home &amp; Living
+      <!-- /react-text -->
+      <!-- react-text: 24 -->
+      <!-- /react-text -->
+    </a><a href="/personal-care" data-reactid="25">
+      <!-- react-text: 26 -->
+      <!-- /react-text -->
+      <!-- react-text: 27 -->Beauty
+      <!-- /react-text -->
+      <!-- react-text: 28 -->
+      <!-- /react-text -->
+    </a><a href="/giftcard" data-reactid="29">Gift Cards</a><a href="/myntrainsider?cache=false" data-reactid="30">Myntra
+      Insider</a>
+    <p class="subhead" data-reactid="31"> USEFUL LINKS </p><a href="http://blog.myntra.com/" data-reactid="32">
+      <!-- react-text: 33 -->
+      <!-- /react-text -->
+      <!-- react-text: 34 -->Blog
+      <!-- /react-text -->
+      <!-- react-text: 35 -->
+      <!-- /react-text -->
+    </a><a href="https://careers.myntra.com" data-reactid="36">
+      <!-- react-text: 37 -->
+      <!-- /react-text -->
+      <!-- react-text: 38 -->Careers
+      <!-- /react-text -->
+      <!-- react-text: 39 -->
+      <!-- /react-text -->
+    </a><a href="/sitemap" data-reactid="40">
+      <!-- react-text: 41 -->
+      <!-- /react-text -->
+      <!-- react-text: 42 -->Site Map
+      <!-- /react-text -->
+      <!-- react-text: 43 -->
+      <!-- /react-text -->
+    </a><a href="/corp-info" data-reactid="44">
+      <!-- react-text: 45 -->
+      <!-- /react-text -->
+      <!-- react-text: 46 -->Corporate Information
+      <!-- /react-text -->
+      <!-- react-text: 47 -->
+      <!-- /react-text -->
+    </a><a href="/security/whitehat" data-reactid="48">
+      <!-- react-text: 49 --> <!-- /react-text --><!-- react-text: 50 -->Whitehat<!-- /react-text --><!-- react-text: 51 --> <!-- /react-text --></a></div>
+  
+
+<div class="link" data-reactid="52">
+  <p class="subhead" data-reactid="53"> CUSTOMER POLICIES </p><a href="/contactus" data-reactid="54">
+    <!-- react-text: 55 -->
+    <!-- /react-text -->
+    <!-- react-text: 56 -->Contact Us
+    <!-- /react-text -->
+    <!-- react-text: 57 -->
+    <!-- /react-text -->
+  </a><a href="/faqs" data-reactid="58">
+    <!-- react-text: 59 -->
+    <!-- /react-text -->
+    <!-- react-text: 60 -->FAQ
+    <!-- /react-text -->
+    <!-- react-text: 61 -->
+    <!-- /react-text -->
+  </a><a href="/tac" data-reactid="62">
+    <!-- react-text: 63 -->
+    <!-- /react-text -->
+    <!-- react-text: 64 -->T&amp;C
+    <!-- /react-text -->
+    <!-- react-text: 65 -->
+    <!-- /react-text -->
+  </a><a href="/termsofuse" data-reactid="66">
+    <!-- react-text: 67 -->
+    <!-- /react-text -->
+    <!-- react-text: 68 -->Terms Of Use
+    <!-- /react-text -->
+    <!-- react-text: 69 -->
+    <!-- /react-text -->
+  </a><a href="/my/orders" data-reactid="70">
+    <!-- react-text: 71 -->
+    <!-- /react-text -->
+    <!-- react-text: 72 -->Track Orders
+    <!-- /react-text -->
+    <!-- react-text: 73 -->
+    <!-- /react-text -->
+  </a><a href="/faqs#shipping" data-reactid="74">
+    <!-- react-text: 75 -->
+    <!-- /react-text -->
+    <!-- react-text: 76 -->Shipping
+    <!-- /react-text -->
+    <!-- react-text: 77 -->
+    <!-- /react-text -->
+  </a><a href="/faqs#cancel" data-reactid="78">
+    <!-- react-text: 79 -->
+    <!-- /react-text -->
+    <!-- react-text: 80 -->Cancellation
+    <!-- /react-text -->
+    <!-- react-text: 81 -->
+    <!-- /react-text -->
+  </a><a href="/faqs#returns" data-reactid="82">
+    <!-- react-text: 83 -->
+    <!-- /react-text -->
+    <!-- react-text: 84 -->Returns
+    <!-- /react-text -->
+    <!-- react-text: 85 -->
+    <!-- /react-text -->
+  </a><a href="/privacypolicy" data-reactid="86">
+    <!-- react-text: 87 -->
+    <!-- /react-text -->
+    <!-- react-text: 88 -->Privacy policy
+    <!-- /react-text -->
+    <!-- react-text: 89 -->
+    <!-- /react-text -->
+  </a><a href="/termsofuse#23.%20Grievance%20Officer" data-reactid="90">
+    <!-- react-text: 91 -->
+    <!-- /react-text -->
+    <!-- react-text: 92 -->Grievance Officer
+    <!-- /react-text -->
+    <!-- react-text: 93 -->
+    <!-- /react-text -->
+  </a>
+</div>
+<div class="link1" data-reactid="94">
+  <p class="subhead" data-reactid="95"> EXPERIENCE MYNTRA APP ON MOBILE </p>
+  <div class="desktop-downLinkContainer" data-reactid="96"><a
+      href="https://play.google.com/store/apps/details?id=com.myntra.android" data-reactid="97"><img
+        class="desktop-androidDownLink"
+        src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"></a><a
+      href="https://itunes.apple.com/in/app/myntra-indias-fashion-store/id907394059" data-reactid="99"><img
+        class="desktop-iOSDownLink"
+        src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"></a>
+  </div>
+  
+</div>
+<div class="link1" data-reactid="94">
+<div  class="subhead" data-reactid="101"> KEEP IN TOUCH </div><a href="https://www.facebook.com/myntra"
+    class="desktop-facebook" data-reactid="102"><img
+      src="https://constant.myntassets.com/web/assets/img/d2bec182-bef5-4fab-ade0-034d21ec82e31574604275433-fb.png"
+      style="width: 20px; height: 20px;"></a><a href="https://twitter.com/myntra" class="desktop-twitter"
+    data-reactid="104"><img
+      src="https://constant.myntassets.com/web/assets/img/f10bc513-c5a4-490c-9a9c-eb7a3cc8252b1574604275383-twitter.png"
+      style="width: 20px; height: 20px;"></a><a href="https://www.youtube.com/user/myntradotcom" class="desktop-youtube"
+    data-reactid="106"><img
+      src="https://constant.myntassets.com/web/assets/img/a7e3c86e-566a-44a6-a733-179389dd87111574604275355-yt.png"
+      style="width: 28px; height: 20px;"></a><a href="https://www.instagram.com/myntra" class="desktop-instagram"
+    data-reactid="108"><img
+      src="https://constant.myntassets.com/web/assets/img/b4fcca19-5fc1-4199-93ca-4cae3210ef7f1574604275408-insta.png"
+      style="width: 20px; height: 22px; position: relative; top: 1px;"></a>
+</div>
+<div class="link3" style="margin-left:-20px" data-reactid="110">
+  <div class="desktop-section" data-reactid="111">
+    <div class="desktop-original" data-reactid="112"><img
+        src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png"
+        style="width: 48px; height: 40px;"></div>
+    <div data-reactid="114"><strong data-reactid="115">100% ORIGINAL </strong><!-- react-text: 116 --> guarantee for all
+      products at myntra.com
+      <!-- /react-text -->
+    </div>
+  </div>
+</div>
+<div class="link3" data-reactid="110">
+  <div class="desktop-section" data-reactid="117">
+    <div class="desktop-return" data-reactid="118"><img
+        src="https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png"
+        style="width: 48px; height: 49px;"></div>
+    <div data-reactid="120"><strong data-reactid="121">Return within 30days </strong><!-- react-text: 122 -->of
+      receiving your order
+      <!-- /react-text -->
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<script>
+  window.onload=loadcoupon();
+</script>
+
+
+
+
+
+ 
+</body>
