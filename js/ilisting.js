@@ -22,7 +22,7 @@ changemode=()=>{
     let f=d.getElementsByTagName('a');
     let g=document.getElementById('nav');
     let h=document.getElementById('nav1');
-    
+    let i=document.getElementById('uid');
     let x=document.getElementById('modebutton');
     
     
@@ -75,12 +75,14 @@ changemode=()=>{
     {
     g.style.backgroundColor="#585858"
     h.style.backgroundColor="#585858"
+    i.style.backgroundColor="#585858"
     
     }
     else
     {
     g.style.backgroundColor="#ffff";
-    h.style.backgroundColor="#ffff"
+    h.style.backgroundColor="#ffff";
+    i.style.backgroundColor="#ffff"
     
     }
 
